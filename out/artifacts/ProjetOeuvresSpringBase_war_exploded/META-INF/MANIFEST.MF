@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Title: oeuvrespringjpa
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Utilisateur
+Implementation-Vendor-Id: com.epul
+Created-By: IntelliJ IDEA
+Build-Jdk: 1.8.0_201
+Main-Class: ${start-class}
+

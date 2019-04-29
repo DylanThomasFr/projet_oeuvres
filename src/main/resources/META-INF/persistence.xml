@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0"
+             xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+
+    <persistence-unit name="oeuvresjpa">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>com.epul.oeuvres.metier.AdherentEntity</class>
+        <class>com.epul.oeuvres.metier.OeuvrepretEntity</class>
+        <class>com.epul.oeuvres.metier.OeuvreventeEntity</class>
+        <class>com.epul.oeuvres.metier.ProprietaireEntity</class>
+        <class>com.epul.oeuvres.metier.ReservationEntity</class>
+        <class>com.epul.oeuvres.metier.UtilisateurEntity</class>
+        <class>com.epul.oeuvres.metier.PretEntity</class>
+
+        <properties>
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/baseoeuvres"/>
+            <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+            <property name="hibernate.connection.username" value="userepul"/>
+            <property name="hibernate.connection.password" value="epul"/>
+            <property name="hibernate.archive.autodetection" value="class"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
+            <property name="hbm2ddl.auto" value="update" />
+            <property name="hibernate.max_fetch_depth" value="3"/>
+        </properties>
+    </persistence-unit>
+</persistence>
